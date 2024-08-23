@@ -1,0 +1,70 @@
+:root{
+    --Slate-300: hsl(212, 45%, 89%);
+    --Slate-500: hsl(216, 15%, 48%);
+    --Slate-900: hsl(218, 44%, 22%);
+    --white: hsl(0, 0%, 100%);
+    --size: 15px;
+    --font-family: 'Outfit', sans-serif;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+    --Mobile: 375px;
+    --Desktop: 1440px;
+}
+h1, h3 { font-size: 11px; text-align: center; 
+font-family: var(--font-family);}
+h1{
+    font-size: 15px;
+    color:var(--Slate-900);
+    font-weight: var(--font-weight-bold);
+}
+h3{
+    color:var(--Slate-500);
+    font-weight: var(--font-weight-regular);
+}
+    .attribution a { color: hsl(228, 45%, 44%); }
+    html, body {
+        width: 100%;
+        height: 100vh; /* 100% of the viewport height */
+    }
+    body{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color:#d5e1ee;
+    }
+    .img{
+        border-radius: 3%;
+        margin: 10px;
+        height:190px;
+        margin-bottom: 0px;
+        width:auto;
+    }
+    .main{
+    width:220px;
+    margin:0 auto;
+    text-align: center;
+    background-color: var(--white);
+    height:340px;
+    border-radius: 10px;
+    overflow: hidden;
+
+     
+}
+.cont{
+    margin:auto;
+    margin-top: 0px;
+    width:150px;
+    padding-bottom: 20px;
+}
+.attribution{
+    position: absolute;
+    bottom: 0;
+}
+
+@media screen and (max-width: var(--Mobile)) {
+    .main {
+       width: 90vw;
+       
+    }
+}
